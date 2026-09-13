@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+	--ink: #17211f;
+	--paper: #f5f5ef;
+	--line: #dfe5dc;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--paper); }
+
+body {
+	margin: 0;
+	background:
+		radial-gradient(circle at 15% 0%, rgba(181, 224, 197, 0.42), transparent 28rem),
+		radial-gradient(circle at 92% 20%, rgba(244, 219, 166, 0.24), transparent 24rem),
+		var(--paper);
+	color: var(--ink);
+	font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+button, select { font: inherit; }
+
+#baton-root-container {
+	background-color: transparent !important;
+	background-image: linear-gradient(rgba(24, 45, 38, 0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(24, 45, 38, 0.035) 1px, transparent 1px) !important;
+	background-size: 32px 32px !important;
+}
+
+#main-content > section { animation: rise-in 500ms ease both; }
+#main-content > section:nth-child(2) { animation-delay: 70ms; }
+#main-content > section:nth-child(3) { animation-delay: 140ms; }
+#main-content > section:nth-child(4) { animation-delay: 210ms; }
+#main-content > section:nth-child(5) { animation-delay: 280ms; }
+#main-content > section:nth-child(6) { animation-delay: 350ms; }
+
+@keyframes rise-in {
+	from { opacity: 0; transform: translateY(10px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes mascot-bob {
+	0%, 100% { transform: translateY(0) rotate(-2deg); }
+	50% { transform: translateY(-7px) rotate(2deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#main-content > section { animation: none; }
+	.animate-\[mascot-bob_4s_ease-in-out_infinite\] { animation: none; }
+}

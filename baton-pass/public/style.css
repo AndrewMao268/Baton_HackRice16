@@ -1,0 +1,41 @@
+body {
+  font-family: -apple-system, sans-serif;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+  color: #222;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.filters input, .filters select, .filters button {
+  padding: 8px;
+}
+
+.handoff-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.handoff-card .date {
+  color: #777;
+  font-size: 13px;
+  margin-top: -8px;
+}
+
+.handoff-card pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+.updates {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #444;
+}

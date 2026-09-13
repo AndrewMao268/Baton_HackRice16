@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Baton Pass</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Baton Pass — Handoffs</h1>
+
+  <div class="filters">
+    <input id="project" placeholder="Filter by project">
+    <input id="person" placeholder="Filter by person">
+    <select id="status">
+      <option value="">Any status</option>
+      <option value="posted">Posted</option>
+      <option value="needs-clarification">Needs clarification</option>
+    </select>
+    <button onclick="loadHandoffs()">Search</button>
+  </div>
+
+  <div id="list"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

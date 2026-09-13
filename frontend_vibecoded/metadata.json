@@ -1,0 +1,7 @@
+{
+  "name": "Baton — Global Team Handoff & Coordination",
+  "description": "Global team handoff and coordination platform answering what happened, what is blocked, who needs to act, and what happens next across time zones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

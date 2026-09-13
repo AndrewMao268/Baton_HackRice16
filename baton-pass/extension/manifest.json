@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Baton Pass",
+  "version": "1.0",
+  "description": "One-click end-of-shift handoff summaries",
+  "permissions": ["tabs"],
+  "host_permissions": ["http://localhost:3000/*"], 
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
